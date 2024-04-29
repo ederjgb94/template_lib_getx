@@ -9,8 +9,13 @@ class HomeView extends GetView<HomeController> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-        //TODO VIEW
-        );
+    return const Scaffold(
+      body: Center(
+        child: Text(
+          'HomeView is working',
+          style: TextStyle(fontSize: 20),
+        ),
+      ),
+    );
   }
 }

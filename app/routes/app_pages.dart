@@ -20,5 +20,10 @@ class AppPages {
       binding: HomeBinding(),
       middlewares: [AuthGuardMiddleware()],
     ),
+    GetPage(
+      name: _Paths.LOGIN,
+      page: () => const LoginView(),
+      binding: LoginBinding(),
+    ),
   ];
 }
